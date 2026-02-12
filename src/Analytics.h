@@ -37,7 +37,14 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <cassert>
 #include <cstring>
 #include <string>
+#ifdef _OPENMP
 #include <omp.h>
+#else
+static inline void omp_set_num_threads(int n) { (void)n; }
+static inline int omp_get_num_threads(void) { return 1; }
+static inline int omp_get_thread_num(void) { return 0; }
+static inline double omp_get_wtime(void) { return 0.0; }
+#endif
 #include <fstream>
 #include <cstdio>
 #include <cstring>
@@ -54,7 +61,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <boost/math/special_functions/gamma.hpp>
 //#include "armadillo"
 #include <algorithm>
-#include <boost/regex.hpp>
+#include <regex>
 
 
 using namespace std;

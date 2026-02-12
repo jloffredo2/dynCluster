@@ -25,6 +25,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 #include "ZeroTradeModel.h"
+#include <set>
 
 ZeroTradeModel::ZeroTradeModel(int tmpM, long double tmpNu, long double tmpOP_w_ij_inp, string tmpYears, int nth): 
                                                         numModelsM(tmpM), nu(tmpNu), OP_w_ij_inp(tmpOP_w_ij_inp),
@@ -296,7 +297,7 @@ int ZeroTradeModel::initializeDebug(time_t seed){
 
     for(int t = 0; t < ntimes; t++){
         if(infile[t].fail()){
-            cout<<"error opening input file: infile["<<t<<"] = "<<infile[t]<<endl;
+            cout<<"error opening input file: infile["<<t<<"]"<<endl;
         }
     }
 

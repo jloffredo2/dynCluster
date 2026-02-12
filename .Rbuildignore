@@ -1,4 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.travis\.yml$
+^src/Makefile\.linux\.bak$
+^src/config\.txt\.bak$
+^main_standalone\.cpp\.bak$
 

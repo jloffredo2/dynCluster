@@ -52,7 +52,10 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <boost/math/distributions/beta.hpp>
 #include <boost/math/special_functions/gamma.hpp>
 #include <algorithm>
-#include <boost/regex.hpp>
+#include <regex>
+using std::regex;
+using std::regex_match;
+using std::match_results;
 
 
 using namespace std;

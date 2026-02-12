@@ -1,0 +1,2 @@
+PKG_CXXFLAGS = -I/usr/local/opt/boost/include
+PKG_LIBS =

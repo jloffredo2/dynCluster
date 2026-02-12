@@ -52,7 +52,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <boost/math/distributions/beta.hpp>
 #include <boost/math/special_functions/gamma.hpp>
 #include <algorithm>
-#include <boost/regex.hpp>
+#include <regex>
 #include "ZeroTradeModelTypedefs.h"
 //#include "ChkpBase.h"
 

@@ -17,6 +17,8 @@ Imports:
     stats,
     tidyr,
     utils
+LinkingTo:
+    Rcpp
 Roxygen: list(wrap = FALSE)
 Suggests:
     knitr
